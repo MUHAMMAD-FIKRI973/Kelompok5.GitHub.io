@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMAN 14 MAKASSAR - Profile Sekolah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f9; margin: 0; padding: 20px; }
+    .container { max-width: 700px; background: #fff; padding: 20px; border-radius: 10px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { text-align: center; color: #333; }
+    label { font-weight: bold; margin-top: 10px; display: block; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #007bff; color: rgb(244, 240, 240); border: none; padding: 10px 20px; margin-top: 15px; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SMAN 14 MAKASSAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile Sekolah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prestasi.html">Prestasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="datasiswa.html">Data Siswa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>Pengumuman!</strong> Pendaftaran siswa baru tahun ajaran 2026/2027 dibuka mulai 1 Januari 2026. Hubungi kami untuk info lebih lanjut.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-center">
+        <h2>Profile SMAN 14 MAKASSAR</h2>
+        <hr>
+        <div>
+            <img src="fotosekolah.jpg" alt="Foto sekolah sman 14 makassar" class="img-fluid rounded">
+        </div>
+        <hr>
+    </div>
+
+    <div class="container mt-4">
+        <h3>Kepala Sekolah</h3>
+        <p><strong>Dra. Hj. Nurhidayah Masri Bandaso, MM</strong><br />
+            Memimpin SMAN 14 MAKASSAR sampai sekarang dengan dedikasi tinggi untuk kemajuan pendidikan.</p>
+    </div>
+
+
+    <div class="container mt-4">
+        <h3>Data Sekolah</h3>
+        <ul>
+            <li>NPSN: 40311948</li>
+            <li>Status: Terakreditasi A</li>
+            <li>Jumlah Guru: 50 orang</li>
+        </ul>
+    </div>
+
+    <div class="container mt-4">
+        <h3>Struktur Organisasi</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Jabatan</th>
+                    <th>Nama</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kepala Sekolah</td>
+                    <td>Dra. Hj. Nurhidayah Masri Bandaso, MM</td>
+                </tr>
+                <tr>
+                    <td>Wakil Kepala Sekolah</td>
+                    <td>H. Suratman, S.H., M.Pd</td>
+                </tr>
+                <tr>
+                    <td>Kepala Tata Usaha</td>
+                    <td>H. Suratman, SH. M.Pd</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+  <h2>Laporan Keluhan Fasilitas</h2>
+  <form action="keluhan.php" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="1">
+    <textarea name="alasan" rows="3"></textarea>
+
+    <button type="submit">Simpan</button>
+  </form>
+</div>
+       <ul align="center">
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+        <p>&copy; 2025 SMAN 14 MAKASSAR. Website dibuat oleh Kelompok 5</p>
+        <p>Jl. Baji Minasa No.9 | Tel: (021) 1234567 | Email: info@SMAN 14 MAKASSAR</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            const footer = document.querySelector('footer p:first-of-type');
+            footer.innerHTML += ` | Diperbarui: ${now.toLocaleDateString('id-ID')} ${now.toLocaleTimeString('id-ID')}`;
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

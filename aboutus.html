@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAN 14 MAKASSAR - Anggota Kelompok</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+  <header class="text-center py-4">
+      <h1>SMAN 14 MAKASSAR</h1>
+      <p>Cerdas Dalam Ilmu, Kuat Dalam Karakter</p>
+  </header>
+  
+    <div class="container">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>Pengumuman!</strong> Pendaftaran siswa baru tahun ajaran 2026/2027 dibuka mulai 1 Januari 2026. Hubungi kami untuk info lebih lanjut.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SMAN 14 MAKASSAR</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile Sekolah</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prestasi.html">Prestasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="datasiswa.html">Data Siswa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+      </div>
+  </nav>
+
+    <div class="container">
+       <h4 align="center">Anggota Kelompok</h4>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr class="text-center">
+                  <th>NO</th>
+                  <th>Nama</th>
+                  <th>Nim</th>
+                  <th>Alamat</th>
+                  <th>Foto dan link tugas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>Muhammad Fikri</td>
+                    <td>240209502016</td>
+                    <td>Enrekang</td>
+                    <td>
+                        <a href="https://muhammad-fikri973.github.io/artikel./" title="Klik untuk lihat tugas fikri">
+                            <img src="fik.jpg" class="img-thumbnail" width="100" height="100" alt="Foto muhammad fikri">
+                        </a>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>2</td>
+                    <td>Jumran Afrizal</td>
+                    <td>240209502018</td>
+                    <td>Takalar</td>
+                    <td><a href="https://afrizal2104.github.io/Jumranafrizal/" title="Klik untuk lihat tugas Jumran Afrizal">
+                            <img src="jum.jpg" class="img-thumbnail" width="100" height="100" alt="Foto Jumran Afrizal">
+                        </a>
+                    </td>
+                <tr class="text-center">
+                    <td>3</td>
+                    <td>Sri Wulandari</td>
+                    <td>240209502020</td>
+                    <td>Selayar</td>
+                    <td><a href="https://sriw62258-max.github.io/sri-wulandarii/" title="Klik untuk lihat tugas wulan">
+                            <img src="wulan.jpg" class="img-thumbnail" width="100" height="100" alt="Foto wulan">
+                        </a>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>4</td>
+                    <td>Rein Juan Tandililing</td>
+                    <td>240209502019</td>
+                    <td>Luwu</td>
+                    <td><a href="https://rein2007.github.io/web/" title="Klik untuk lihat tugas rein">
+                            <img src="rein.jpg" class="img-thumbnail" width="100" height="100" alt="Foto rein">
+                        </a>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>5</td>
+                    <td>Muh.Ardiansyah</td>
+                    <td>240209502017</td>
+                    <td>Sendana</td>
+                    <td><a href="https://muhardiansyah123majene-png.github.io/ytre/" title="Klik untuk lihat tugas ardiansyah">
+                            <img src="dedy.jpg" class="img-thumbnail" width="100" height="100" alt="Foto ardiansyah">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container text-center my-4">
+        <h2>Hasil Observasi</h2>
+        <img src="hasilobser.jpg" class="img-fluid" width="500" height="500" alt="Hasil Observasi">
+    </div>
+
+  <div class="container">
+    <h2>Form Buku Tamu</h2>
+    <hr>
+    <form action="koneksi.php" method="post">
+        <div class="mb-3">
+            <label for="nama" class="form-label">Nama Lengkap:</label>
+            <input type="text" class="form-control" name="nama" id="nama" required minlength="3" pattern="[A-Za-z\s]{3,}">
+            <div class="form-text">Minimal 3 karakter, hanya huruf dan spasi.</div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Jenis Kelamin:</label><br>
+            <input type="radio" name="jk" value="Pria" checked required> Pria
+            <input type="radio" name="jk" value="Wanita"> Wanita
+            <input type="radio" name="jk" value="Other"> Other
+            <div class="form-text">Harus pilih satu opsi.</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="alamat" class="form-label">Alamat Tempat Tinggal:</label>
+            <input type="text" class="form-control" name="alamat" id="alamat" required minlength="5">
+            <div class="form-text">Minimal 5 karakter.</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" name="email" id="email" required>
+            <div class="form-text">Format email yang valid diperlukan.</div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Aktif pada Sosial Media:</label><br>
+            <input type="checkbox" name="sosmed[]" value="Facebook" checked> Facebook<br>
+            <input type="checkbox" name="sosmed[]" value="Twitter"> Twitter<br>
+            <input type="checkbox" name="sosmed[]" value="Instagram"> Instagram<br>
+            <input type="checkbox" name="sosmed[]" value="Tiktok"> Tiktok<br>
+            <input type="checkbox" name="sosmed[]" value="Opera mini"> Opera mini
+            <div class="form-text">Pilih minimal satu (opsional).</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="info" class="form-label">Mengetahui web ini dari:</label>
+            <select class="form-select" name="info" id="info" required>
+                <option value="">Pilih</option>
+                <option value="web">Web Jurusan</option>
+                <option value="surat_kabar">Surat Kabar</option>
+                <option value="teman">Teman/Kerabat</option>
+                <option value="browsing">Browsing Internet</option>
+            </select>
+            <div class="form-text">Harus pilih satu opsi.</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="pesan" class="form-label">Kritik dan Saran:</label>
+            <textarea class="form-control" name="pesan" id="pesan" cols="40" rows="5" required minlength="10"></textarea>
+            <div class="form-text">Minimal 10 karakter.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Kirim</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('formBukuTamu').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        let isValid = true;
+        let errorMsg = '';
+
+        const nama = document.getElementById('nama').value.trim();
+        if (nama.length < 3) {
+            isValid = false;
+            errorMsg += 'Nama harus minimal 3 karakter.\n';
+        }
+
+        const jk = document.querySelector('input[name="jk"]:checked');
+        if (!jk) {
+            isValid = false;
+            errorMsg += 'Jenis kelamin harus dipilih.\n';
+        }
+
+        const alamat = document.getElementById('alamat').value.trim();
+        if (alamat.length < 5) {
+            isValid = false;
+            errorMsg += 'Alamat harus minimal 5 karakter.\n';
+        }
+
+        const email = document.getElementById('email').value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email || !emailRegex.test(email)) {
+            isValid = false;
+            errorMsg += 'Email harus valid.\n';
+        }
+
+        const sosmed = document.querySelectorAll('input[name="sosmed[]"]:checked');
+        if (sosmed.length === 0) {
+            isValid = false;
+            errorMsg += 'Pilih minimal satu sosial media.\n';
+        }
+
+        const info = document.getElementById('info').value;
+        if (!info) {
+            isValid = false;
+            errorMsg += 'Pilih sumber informasi web.\n';
+        }
+
+        const pesan = document.getElementById('pesan').value.trim();
+        if (pesan.length < 10) {
+            isValid = false;
+            errorMsg += 'Pesan harus minimal 10 karakter.\n';
+        }
+
+        if (isValid) {
+            alert('Form valid! Mengirim data...');
+            this.submit(); 
+        } else {
+            alert('Error: ' + errorMsg);
+        }
+    });
+</script>
+
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+        <p>&copy; 2025 SMAN 14 MAKASSAR. Website dibuat oleh Kelompok 5</p>
+        <p>Jl. Baji Minasa No.9 | Tel: (021) 1234567 | Email: info@SMAN14MAKASSAR</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            const footer = document.querySelector('footer p:first-of-type');
+            footer.innerHTML += ` | Diperbarui: ${now.toLocaleDateString('id-ID')} ${now.toLocaleTimeString('id-ID')}`;
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

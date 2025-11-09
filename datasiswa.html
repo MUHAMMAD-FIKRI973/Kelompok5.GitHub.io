@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAN 14 MAKASSAR - Data Siswa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <header class="text-center py-4">
+        <h1>SMAN 14 MAKASSAR</h1>
+        <p>Cerdas Dalam Ilmu, Kuat Dalam Karakter</p>
+    </header>
+
+    <div class="container">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>Pengumuman!</strong> Pendaftaran siswa baru tahun ajaran 2026/2027 dibuka mulai 1 Januari 2026. Hubungi kami untuk info lebih lanjut.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SMAN 14 MAKASSAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile Sekolah</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prestasi.html">Prestasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="datasiswa.html">Data Siswa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="mb-5">
+    <h4 align="center">Data Siswa</h4>
+    <table class="table table-bordered table-striped mt-4">
+<table class="table table-bordered table-striped">
+  <thead>
+  <tr>
+    <th rowspan="2" class="text-center">No</th>
+    <th colspan="3" class="text-center">Kelas</th>
+    <th rowspan="2" class="text-center">Total</th>
+  </tr>
+  <tr>
+    <th class="text-center">X</th>
+    <th class="text-center">XI</th>
+    <th class="text-center">XII</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td class="text-center">Laki-laki</td>
+    <td class="text-center">166</td>
+    <td class="text-center">192</td>
+    <td class="text-center">124</td>
+    <td class="text-center">482</td>
+  </tr>
+  <tr>
+    <td class="text-center">Perempuan</td>
+    <td class="text-center">199</td>
+    <td class="text-center">154</td>
+    <td class="text-center">185</td>
+    <td class="text-center">538</td>
+  </tr>
+  <tr>
+    <td class="text-center">Total</td>
+    <td class="text-center">385</td>
+    <td class="text-center">346</td>
+    <td class="text-center">309</td>
+    <td class="text-center">1020</td>
+  </tr>
+  </tbody>
+</table>
+<div class="text-center my-4">
+  <h2>Grafik Siswa</h2>
+  <img src="siswa.jpg" alt="Grafik Siswa" class="img-fluid">
+</div>
+    </div>
+
+   <footer class="bg-dark text-white text-center py-4 mt-4">
+        <p>&copy; 2025 SMAN 14 MAKASSAR. Website dibuat oleh Kelompok 5</p>
+        <p>Jl. Baji Minasa No.9 | Tel: (021) 1234567 | Email: info@SMAN 14 MAKASSAR</p>
+    </footer>
+    
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            const footer = document.querySelector('footer p:first-of-type');
+            footer.innerHTML += ` | Diperbarui: ${now.toLocaleDateString('id-ID')} ${now.toLocaleTimeString('id-ID')}`;
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

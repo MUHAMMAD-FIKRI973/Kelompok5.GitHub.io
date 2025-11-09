@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Penerimaan Siswa Baru</title>
+    <style>
+        body { font-family: Arial; margin: 30px; background-color: #f9f9f9; }
+        form { background: white; padding: 20px; width: 400px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        input, textarea, select { width: 100%; padding: 8px; margin: 8px 0; }
+        button { background-color: #4CAF50; color: white; padding: 10px; border: none; width: 100%; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<h2>Formulir Penerimaan Siswa Baru</h2>
+<form action="siswabaru.php" method="POST">
+    <label>Nama Lengkap:</label>
+    <input type="text" name="nama" required>
+
+    <label>Jenis Kelamin:</label>
+    <select name="jeniskelamin" required>
+        <option value="">-- Pilih --</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+    </select>
+
+    <label>Alamat:</label>
+    <textarea name="alamat" required></textarea>
+
+    <label>Asal Sekolah:</label>
+    <input type="text" name="asalsekolah" required>
+
+    <label>Jurusan Pilihan:</label>
+    <select name="jurusan" required>
+        <option value="">-- Pilih --</option>
+        <option value="IPA">IPA</option>
+        <option value="IPS">IPS</option>
+        <option value="tkj">tkj</option>
+        <option value="audio vidio">audio vidio</option>
+    </select>
+
+    <button type="submit">Kirim Pendaftaran</button>
+</form>
+
+<p><a href="data_siswa.php">Lihat Data Pendaftar</a></p>
+
+</body>
+</html>

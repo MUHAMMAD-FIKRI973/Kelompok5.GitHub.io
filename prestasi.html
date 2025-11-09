@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMAN 14 MAKASSAR - Ekstrakurikuler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f9; margin: 0; padding: 20px; }
+    .container { max-width: 700px; background: #fff; padding: 20px; border-radius: 10px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { text-align: center; color: #333; }
+    label { font-weight: bold; margin-top: 10px; display: block; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #007bff; color: rgb(244, 240, 240); border: none; padding: 10px 20px; margin-top: 15px; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+
+    <header class="text-center py-4">
+        <h1>SMAN 14 MAKASSAR</h1>
+        <p>Cerdas Dalam Ilmu, Kuat Dalam Karakter</p>
+    </header>
+
+    <div class="container">
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <strong>Pengumuman!</strong> Pendaftaran siswa baru tahun ajaran 2026/2027 dibuka mulai 1 Januari 2026. Hubungi kami untuk info lebih lanjut.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SMAN 14 MAKASSAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile Sekolah</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prestasi.html">Prestasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="datasiswa.html">Data Siswa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+            <div>
+                <h2>PMR</h2>
+                <img src="pmr.jpg" width="400" height="400" />
+                <p>Kegiatan HGN meliputi upacara bendera, penyampaian apresiasi dan terima kasih dari siswa kepada guru melalui surat atau kado, menggelar kegiatan edukatif dan kreatif seperti lomba atau nonton film pendidikan, serta aksi sosial yang mendukung pendidikan. </p>
+            </div>
+            
+            <div>
+                <h2>KEGIATAN HGN</h2>
+                <img src="kunjungan.jpg" width="400" height="400" />
+                <p>Kegiatan HGN meliputi upacara bendera, penyampaian apresiasi dan terima kasih dari siswa kepada guru melalui surat atau kado, menggelar kegiatan edukatif dan kreatif seperti lomba atau nonton film pendidikan, serta aksi sosial yang mendukung pendidikan. </p>
+            </div>
+            
+            <div>
+                <h2>PASKIBRAKA</h2>
+                <img src="paski.jpg" width="400" height="400" />
+                <p>Paskibraka menjadi singkatan dari Pasukan Pengibar Bendera Pusaka, yaitu sebuah program nasional yang melibatkan pelajar terpilih untuk mengibarkan bendera pusaka duplikat pada upacara 17 Agustus di tingkat nasional, provinsi, dan kabupaten/kota, serta berpotensi menjadi calon pemimpin bangsa berkarakter Pancasila.</p>
+            </div>
+            
+        <div>
+            <h3>Jadwal Kegiatan Ekstrakurikuler</h3>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <th>Hari</th>
+                    <th>Kegiatan</th>
+                    <th>Waktu</th>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td>Pramuka</td>
+                    <td>15.30 - 17.00</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td>Basket</td>
+                    <td>15.30 - 17.00</td>
+                </tr>
+                <tr>
+                    <td>Rabu</td>
+                    <td>Futsal</td>
+                    <td>15.30 - 17.00</td>
+                </tr>
+                <tr>
+                    <td>Kamis</td>
+                    <td>Paski</td>
+                    <td>15.30 - 17.00</td>
+                </tr>
+                <tr>
+                    <td>Jumat</td>
+                    <td>English Club</td>
+                    <td>15.30 - 17.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+  <h2>Peserta Baru Ekstrakurikuler</h2>
+  <form action="p.php" method="post" enctype="multipart/form-data">
+    <label>Nama</label>
+    <input type="text" name="nama" required>
+
+    <label>Kelas</label>
+    <input type="text" name="kelas">
+
+    <label>Ekskul</label>
+    <select name="jenis">
+      <option value="basket">basket</option>
+      <option value="futsal">futsal</option>
+      <option value="paski">paski</option>
+      <option value="pmr">pmr</option>
+      <option value="English Club">English Club</option>
+    </select>
+
+    <label>Telepon</label>
+    <input type="text" name="telpon">
+
+    <label>Email</label>
+    <input type="email" name="email">
+
+    <label>Alasan Masuk</label>
+    <textarea name="alasan" rows="3"></textarea>
+
+    <button type="submit">Simpan & Tampilkan</button>
+  </form>
+</div>
+        <ul align="center">
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+        <p>&copy; 2025 SMAN 14 MAKASSAR. Website dibuat oleh Kelompok 5</p>
+        <p>Jl. Baji Minasa No.9 | Tel: (021) 1234567 | Email: info@SMAN 14 MAKASSAR</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const now = new Date();
+            const footer = document.querySelector('footer p:first-of-type');
+            footer.innerHTML += ` | Diperbarui: ${now.toLocaleDateString('id-ID')} ${now.toLocaleTimeString('id-ID')}`;
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
